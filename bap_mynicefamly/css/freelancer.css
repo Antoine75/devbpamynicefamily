@@ -158,11 +158,6 @@ sup {
   top: -.5em;
 }
 
-a {
-  color: #1abc9c;
-  text-decoration: none;
-  background-color: transparent;
-}
 
 a:hover {
   color: #117964;
@@ -3953,32 +3948,7 @@ input[type="button"].btn-block {
   display: block;
 }
 
-.navbar {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-}
 
-.navbar > .container,
-.navbar > .container-fluid {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.navbar-brand {
-  display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
-  margin-right: 1rem;
-  font-size: 1.25rem;
-  line-height: inherit;
-  white-space: nowrap;
-}
 
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;

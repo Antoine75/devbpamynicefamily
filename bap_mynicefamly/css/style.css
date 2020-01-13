@@ -1,0 +1,26 @@
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+#dirigeants, #surdoues{
+    background-color: #F5F5F5;
+}
+
+#footer{
+    background-color: #FFFFFF;
+}
+
+.header{
+    background-color: #FFFFFF;
+}
+
+a{
+    color: black;
+}
