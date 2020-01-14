@@ -94,7 +94,33 @@
 
         <div class="col-6">
 
-          <img class="image-logo" src="img/illu_lifeo.svg" alt="">
+          <video width="600" id="v0" tabindex="0", autobuffer preload>
+            <source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="video/Composition_finale.mp4"></source>
+        </video>
+        <script src="js/sticky.js"></script>
+        <script>
+    
+            enterView({
+                selector: 'section',
+                enter: function(el) {
+                    el.classList.add('entered');
+                }
+            })
+            var frameNumber = 0, // start video at frame 0
+            //VITESSE VIDEO
+            playbackConst = 100, 
+            // get page height from video duration        
+            vid = document.getElementById('v0'); 
+
+        // Use requestAnimationFrame for smooth playback
+        function scrollPlay(){  
+        var frameNumber  = window.pageYOffset/playbackConst;
+        vid.currentTime  = frameNumber;
+        window.requestAnimationFrame(scrollPlay);
+        }
+
+        window.requestAnimationFrame(scrollPlay);
+        </script>
 
         </div>
       </div>
