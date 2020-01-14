@@ -18,10 +18,23 @@
   <!-- Theme CSS -->
   <link href="css/freelancer.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 </head>
 
 <body id="page-top">
+
+   <button id="topBtn"></button>
+
+    <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      window.onscroll = function(ev) {
+        document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
+      };
+    });
+    </script>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top" id="menu">
@@ -61,9 +74,9 @@
       <div class="row">
         <div class="col-6">
           <div class="col-9">
-            <h1>Avec LIFEO,
+            <h4>Avec LIFEO,<br>
               Facilitez vous la vie !
-            </h1>
+            </h4>
             <p>
               Le facilitateur aide un
               groupe à comprendre ses
@@ -80,7 +93,7 @@
         </div>
 
         <div class="col-6">
-          
+
           <img class="image-logo" src="img/illu_lifeo.svg" alt="">
 
         </div>
@@ -98,10 +111,10 @@
 
       <div class="row">
         <div class="col-6">
-            <div class="col-9 espace">
+          <div class="col-9">
 
-          <img class="img" src="img/surdoue.svg" alt="">
-            </div>
+            <img class="img" src="img/surdoue.svg" alt="">
+          </div>
         </div>
 
 
@@ -133,16 +146,18 @@
 
       <div class="row">
         <div class="col-8">
-            <div class="col-10">
+          <div class="col-10">
 
-          <h1>Les hauts-dirigeants</h1>
-          <p>
-            Parce que la transformation des organisations passe par la transformation de leurs leaders, j’accompagne des
-            dirigeants et des managers en quête de sens et désireux de libérer les énergies en développant un leadership
-            éclairé basé sur le pouvoir de l’intelligence collective, de la bienveillance et de l’intuition.
-          </p>
-          <p>blablablablablablablablablablabl</p>
-          <a href=""><img class="cta_bouton2" src="img/bouton_dirigeant.svg" alt=""></a>
+            <h1>Les hauts-dirigeants</h1>
+            <p>
+              Parce que la transformation des organisations passe par la transformation de leurs leaders, j’accompagne
+              des
+              dirigeants et des managers en quête de sens et désireux de libérer les énergies en développant un
+              leadership
+              éclairé basé sur le pouvoir de l’intelligence collective, de la bienveillance et de l’intuition.
+            </p>
+            <p>blablablablablablablablablablabl</p>
+            <a href=""><img class="cta_bouton2" src="img/bouton_dirigeant.svg" alt=""></a>
           </div>
         </div>
 
@@ -233,13 +248,12 @@
     <div class="container">
       <div class="row">
         <div class="col-8">
-          <p>My nice family<br>Mentions légales</p>
-
+          <div class="col-10">
+            <p>My nice family<br>Mentions légales</p>
+          </div>
         </div>
 
-        <div class="col-1"></div>
-
-        <div class="col-3">
+        <div class="col-4">
           <a href=""><img src="img/facebook_logo.svg" alt=""></a>
           <a href=""><img src="img/twitter_logo.svg" alt=""></a>
           <a href=""><img src="img/linkedin_logo.svg" alt=""></a>
@@ -251,12 +265,15 @@
   <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
   <div class="scroll-to-top d-lg-none position-fixed ">
     <a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top">
-     
+
     </a>
   </div>
 
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
@@ -268,6 +285,10 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+  
+  <script type="text/javascript" src="js/button_scroll.js"></script>
+  
+ 
 
 </body>
 
