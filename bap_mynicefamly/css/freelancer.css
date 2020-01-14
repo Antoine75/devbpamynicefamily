@@ -196,10 +196,6 @@ figure {
   margin: 0 0 1rem;
 }
 
-img {
-  vertical-align: middle;
-  border-style: none;
-}
 
 svg {
   overflow: hidden;
@@ -478,10 +474,6 @@ mark,
   content: "\2014\00A0";
 }
 
-.img-fluid {
-  max-width: 200%;
-  height: auto;
-}
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -3948,7 +3940,32 @@ input[type="button"].btn-block {
   display: block;
 }
 
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10rem 1rem;
+}
 
+.navbar > .container,
+.navbar > .container-fluid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: 0.3125rem;
+  padding-bottom: 0.3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
 
 .navbar-brand:hover, .navbar-brand:focus {
   text-decoration: none;
@@ -4384,10 +4401,7 @@ input[type="button"].btn-block {
   padding: 1.25rem;
 }
 
-.card-img {
-  width: 100%;
-  border-radius: calc(0.5rem - 0.125rem);
-}
+
 
 .card-img-top {
   width: 100%;
