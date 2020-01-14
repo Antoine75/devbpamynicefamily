@@ -23,18 +23,10 @@
 </head>
 
 <body id="page-top">
-
-   <button id="topBtn"></button>
-
-    <div><a id="cRetour" class="cInvisible" href="#haut"></a></div>
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      window.onscroll = function(ev) {
-        document.getElementById("cRetour").className = (window.pageYOffset > 100) ? "cVisible" : "cInvisible";
-      };
-    });
-    </script>
+  
+  <div class="cRetour">
+    <a href="#top"><img src="img/scroll_button.svg"/></a>
+    </div>
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top" id="menu">
@@ -269,11 +261,8 @@
     </a>
   </div>
 
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
-
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
   <!-- Plugin JavaScript -->
@@ -285,8 +274,11 @@
 
   <!-- Custom scripts for this template -->
   <script src="js/freelancer.min.js"></script>
+
+  <!-- Bouton scroll (visible sur la grande page) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/button_scroll.js"></script>
   
-  <script type="text/javascript" src="js/button_scroll.js"></script>
   
  
 
