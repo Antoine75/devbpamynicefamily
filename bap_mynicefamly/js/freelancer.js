@@ -60,16 +60,3 @@
     });
   });
 
-  var onScrollHandler = function() {
-    var newImageUrl = yourImageElement.src;
-    var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    if (scrollTop > 100) {
-       newImageUrl = "img/twitter_logo.svg"
-    }
-    if (scrollTop > 200) {
-       newImageUrl = "img/facebook_logo.svg"
-    yourImageElement.src = newImageUrl;
-};
-object.addEventListener ("scroll", onScrollHandler);
-
-})(jQuery); // End of use strict
