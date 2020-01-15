@@ -132,6 +132,16 @@ body{
     padding-top: 4em;
 }
 
+<<<<<<< HEAD
+#bold {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+#res1 {
+    margin-right: 3em;
+=======
 .bad{
     color: black;
 }
@@ -149,4 +159,5 @@ body{
 
 .logo_delete {
     display: none;
+>>>>>>> 09c6c7a22a5e50e31ac8bf8188d9c45e0afe6da4
 }
