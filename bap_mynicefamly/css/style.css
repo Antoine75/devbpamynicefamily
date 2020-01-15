@@ -132,6 +132,7 @@ body{
     padding-top: 4em;
 }
 
+<<<<<<< HEAD
 #bold {
     font-weight: bold;
     font-size: 22px;
@@ -140,4 +141,23 @@ body{
 
 #res1 {
     margin-right: 3em;
+=======
+.bad{
+    color: black;
+}
+
+.bad:hover {
+    color: red;
+}
+
+.bad:focus {
+    color:green;
+}
+.bad:active {
+    color: blue;
+}
+
+.logo_delete {
+    display: none;
+>>>>>>> 09c6c7a22a5e50e31ac8bf8188d9c45e0afe6da4
 }
