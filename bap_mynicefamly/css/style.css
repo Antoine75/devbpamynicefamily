@@ -131,3 +131,13 @@ body{
 #place2 {
     padding-top: 4em;
 }
+
+#bold {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+
+#res1 {
+    margin-right: 3em;
+}
