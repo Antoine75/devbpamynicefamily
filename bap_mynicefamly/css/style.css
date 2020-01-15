@@ -131,3 +131,18 @@ body{
 #place2 {
     padding-top: 4em;
 }
+
+.bad{
+    color: black;
+}
+
+.bad:hover {
+    color: red;
+}
+
+.bad:focus {
+    color:green;
+}
+.bad:active {
+    color: blue;
+}
