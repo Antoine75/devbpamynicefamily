@@ -58,5 +58,4 @@
     }).on("blur", ".floating-label-form-group", function() {
       $(this).removeClass("floating-label-form-group-with-focus");
     });
-  });
-
+  });})
